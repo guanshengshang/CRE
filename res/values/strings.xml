@@ -8,5 +8,9 @@
     <string name="btn_street">步行街</string>
     <string name="btn_hotel">星级酒店</string>
     <string name="btn_community">社区商业</string>
+    <string name="btn_store_hire">我要出租商铺</string>
+    <string name="btn_store_sell">我要出售商铺</string>
+    <string name="btn_store_lessee">我要承租商铺</string>
+    <string name="btn_store_buy">我要购买商铺</string>
 
 </resources>
