@@ -18,9 +18,9 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 
 public class ImageCycleActivity extends Activity {
 
-	private ImageCycleView mAdView;
+	private ImageCycleView mAdViewTop;
 	
-	private ImageCycleView mAdView2;
+	private ImageCycleView mAdViewButtom;
 	
 	private ArrayList<ADInfo> infos = new ArrayList<ADInfo>();
 	private ArrayList<ADInfo> infos2 = new ArrayList<ADInfo>();
@@ -29,7 +29,8 @@ public class ImageCycleActivity extends Activity {
 			"http://pic30.nipic.com/20130626/8174275_085522448172_2.jpg",
 			"http://pic18.nipic.com/20111215/577405_080531548148_2.jpg",
 			"http://pic15.nipic.com/20110722/2912365_092519919000_2.jpg",
-			"http://pic.58pic.com/58pic/12/64/27/55U58PICrdX.jpg"};
+			"http://pic.58pic.com/58pic/12/64/27/55U58PICrdX.jpg",
+			"http://www.iteye.com/upload/logo/user/1032200/c8d9d8c4-286a-3c7d-91f1-01f4ac0e4fc6.jpg?1416063504"};
 	
 	private String[] imageUrls2 = {
 			"http://down1.sucaitianxia.com/psd02/psd158/psds27988.jpg",
@@ -58,10 +59,10 @@ public class ImageCycleActivity extends Activity {
 			infos2.add(info2);
 		}
 		
-		mAdView = (ImageCycleView) findViewById(R.id.ad_view);
-		mAdView2 = (ImageCycleView) findViewById(R.id.ad_view2);
-		mAdView.setImageResources(infos, mAdCycleViewListener);
-		mAdView2.setImageResources(infos2, mAdCycleViewListener);
+		mAdViewTop = (ImageCycleView) findViewById(R.id.ad_view);
+		mAdViewButtom = (ImageCycleView) findViewById(R.id.ad_view2);
+		mAdViewTop.setImageResources(infos, mAdCycleViewListener);
+		mAdViewButtom.setImageResources(infos2, mAdCycleViewListener);
 	}
 
 	private ImageCycleViewListener mAdCycleViewListener = new ImageCycleViewListener() {
@@ -80,19 +81,22 @@ public class ImageCycleActivity extends Activity {
 	@Override
 	protected void onResume() {
 		super.onResume();
-		mAdView.startImageCycle();
+		mAdViewTop.startImageCycle();
+		mAdViewButtom.startImageCycle();
 	};
 
 	@Override
 	protected void onPause() {
 		super.onPause();
-		mAdView.pushImageCycle();
+		mAdViewTop.pushImageCycle();
+		mAdViewButtom.pushImageCycle();
 	}
 
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-		mAdView.pushImageCycle();
+		mAdViewTop.pushImageCycle();
+		mAdViewButtom.pushImageCycle();
 	}
 
 }

@@ -5,10 +5,11 @@ package com.buc.cre.entity;
  * @version 2015年4月23日 上午11:32:53
  */
 public class ADInfo {
-	String id = "";
-	String url = "";
-	String content = "";
-	String type = "";
+	private String id = "";
+	private String url = "";
+	private String content = "";
+	private String type = "";
+	
 	public String getId() {
 		return id;
 	}
