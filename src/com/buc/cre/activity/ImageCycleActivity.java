@@ -40,7 +40,7 @@ public class ImageCycleActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_ad_cycle);
+		setContentView(R.layout.activity_home);
 		/*mImageUrl = new ArrayList<String>();
 		mImageUrl2 = new ArrayList<String>();*/
 		for(int i=0;i < imageUrlsTop.length; i ++){
