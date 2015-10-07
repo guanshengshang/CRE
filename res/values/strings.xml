@@ -2,6 +2,11 @@
 <resources>
 
     <string name="app_name">商铺租售网</string>
-    <string name="action_settings">Settings</string>
+    <string name="btn_home">首页</string>
+    <string name="btn_publish">免费发布</string>
+    <string name="btn_shopcenter">购物中心</string>
+    <string name="btn_street">步行街</string>
+    <string name="btn_hotel">星级酒店</string>
+    <string name="btn_community">社区商业</string>
 
 </resources>

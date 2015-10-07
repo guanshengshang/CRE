@@ -9,8 +9,6 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.buc.cre.R;
-import com.buc.cre.R.id;
-import com.buc.cre.R.layout;
 import com.buc.cre.entity.ADInfo;
 import com.buc.cre.widget.ImageCycleView;
 import com.buc.cre.widget.ImageCycleView.ImageCycleViewListener;
@@ -22,17 +20,17 @@ public class ImageCycleActivity extends Activity {
 	
 	private ImageCycleView mAdViewButtom;
 	
-	private ArrayList<ADInfo> infos = new ArrayList<ADInfo>();
-	private ArrayList<ADInfo> infos2 = new ArrayList<ADInfo>();
+	private ArrayList<ADInfo> infosTop = new ArrayList<ADInfo>();
+	private ArrayList<ADInfo> infosButtom = new ArrayList<ADInfo>();
 
-	private String[] imageUrls = {"http://img.taodiantong.cn/v55183/infoimg/2013-07/130720115322ky.jpg",
+	private String[] imageUrlsTop = {"http://img.taodiantong.cn/v55183/infoimg/2013-07/130720115322ky.jpg",
 			"http://pic30.nipic.com/20130626/8174275_085522448172_2.jpg",
 			"http://pic18.nipic.com/20111215/577405_080531548148_2.jpg",
 			"http://pic15.nipic.com/20110722/2912365_092519919000_2.jpg",
 			"http://pic.58pic.com/58pic/12/64/27/55U58PICrdX.jpg",
 			"http://www.iteye.com/upload/logo/user/1032200/c8d9d8c4-286a-3c7d-91f1-01f4ac0e4fc6.jpg?1416063504"};
 	
-	private String[] imageUrls2 = {
+	private String[] imageUrlsButtom = {
 			"http://down1.sucaitianxia.com/psd02/psd158/psds27988.jpg",
 			"http://pic2.ooopic.com/11/35/98/12bOOOPIC8f.jpg",
 			"http://down1.sucaitianxia.com/psd02/psd158/psds28266.jpg",
@@ -45,24 +43,24 @@ public class ImageCycleActivity extends Activity {
 		setContentView(R.layout.activity_ad_cycle);
 		/*mImageUrl = new ArrayList<String>();
 		mImageUrl2 = new ArrayList<String>();*/
-		for(int i=0;i < imageUrls.length; i ++){
+		for(int i=0;i < imageUrlsTop.length; i ++){
 			ADInfo info = new ADInfo();
-			info.setUrl(imageUrls[i]);
+			info.setUrl(imageUrlsTop[i]);
 			info.setContent("top-->" + i);
-			infos.add(info);
+			infosTop.add(info);
 		}
 		
-		for(String str: imageUrls2){
-			ADInfo info2 = new ADInfo();
-			info2.setUrl(str);
-			info2.setContent("bottom");
-			infos2.add(info2);
+		for(String str: imageUrlsButtom){
+			ADInfo info = new ADInfo();
+			info.setUrl(str);
+			info.setContent("bottom");
+			infosButtom.add(info);
 		}
 		
-		mAdViewTop = (ImageCycleView) findViewById(R.id.ad_view);
-		mAdViewButtom = (ImageCycleView) findViewById(R.id.ad_view2);
-		mAdViewTop.setImageResources(infos, mAdCycleViewListener);
-		mAdViewButtom.setImageResources(infos2, mAdCycleViewListener);
+		mAdViewTop = (ImageCycleView) findViewById(R.id.ad_viewTop);
+		mAdViewButtom = (ImageCycleView) findViewById(R.id.ad_viewButtom);
+		mAdViewTop.setImageResources(infosTop, mAdCycleViewListener);
+		mAdViewButtom.setImageResources(infosButtom, mAdCycleViewListener);
 	}
 
 	private ImageCycleViewListener mAdCycleViewListener = new ImageCycleViewListener() {
