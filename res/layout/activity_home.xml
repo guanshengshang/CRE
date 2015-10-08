@@ -11,12 +11,12 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:orientation="vertical" >
-        
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" 
-            android:layout_marginBottom="2dp">
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal" >
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -29,7 +29,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
-            		android:layout_marginLeft="3.0dip"
+                    android:layout_marginLeft="3.0dip"
                     android:text="@string/btn_home" />
             </LinearLayout>
 
@@ -68,34 +68,38 @@
             android:id="@+id/ad_viewTop"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:layout_marginBottom="2dp">
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1" >
         </com.buc.cre.widget.ImageCycleView>
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:orientation="horizontal" 
+            android:layout_marginBottom="2dp"
             android:layout_weight="1"
-            android:layout_marginBottom="2dp">
+            android:orientation="horizontal" >
+
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:orientation="vertical" >
+
                 <Button
                     android:id="@+id/shopCenterButton"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-            		android:layout_weight="2"
+                    android:layout_weight="2"
                     android:text="@string/btn_shopcenter" />
+
                 <ImageView
-		            android:id="@+id/shopCenterImage"
-		            android:layout_width="fill_parent"
-		            android:layout_height="fill_parent"
-		            android:layout_weight="1"
-		            android:src="@drawable/ic_launcher" />
+                    android:id="@+id/shopCenterImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
@@ -106,15 +110,17 @@
                     android:id="@+id/streetButton"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-            		android:layout_weight="2"
+                    android:layout_weight="2"
                     android:text="@string/btn_street" />
+
                 <ImageView
-		            android:id="@+id/streetImage"
-		            android:layout_width="fill_parent"
-		            android:layout_height="fill_parent"
-		            android:layout_weight="1"
-		            android:src="@drawable/ic_launcher" />
+                    android:id="@+id/streetImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
@@ -125,15 +131,17 @@
                     android:id="@+id/hotelButton"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-            		android:layout_weight="2"
+                    android:layout_weight="2"
                     android:text="@string/btn_hotel" />
+
                 <ImageView
-		            android:id="@+id/hotelImage"
-		            android:layout_width="fill_parent"
-		            android:layout_height="fill_parent"
-		            android:layout_weight="1"
-		            android:src="@drawable/ic_launcher" />
+                    android:id="@+id/hotelImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
@@ -144,24 +152,65 @@
                     android:id="@+id/communityButton"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-            		android:layout_weight="2"
+                    android:layout_weight="2"
                     android:text="@string/btn_community" />
+
                 <ImageView
-		            android:id="@+id/communityImage"
-		            android:layout_width="fill_parent"
-		            android:layout_height="fill_parent"
-		            android:layout_weight="1"
-		            android:src="@drawable/ic_launcher" />
+                    android:id="@+id/communityImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher" />
             </LinearLayout>
         </LinearLayout>
-        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:hint="@string/text_search"
+				    android:maxLines="1"  
+				    android:singleLine="true">
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/homeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="3.0dip"
+                    android:text="@string/btn_search" />
+            </LinearLayout>
+        </LinearLayout>
+
         <com.buc.cre.widget.ImageCycleView
             android:id="@+id/ad_viewButtom"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" 
-            android:layout_weight="1">
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
         </com.buc.cre.widget.ImageCycleView>
-        
     </LinearLayout>
 
 </RelativeLayout>
