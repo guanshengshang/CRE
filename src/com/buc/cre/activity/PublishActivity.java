@@ -9,6 +9,7 @@ import com.buc.cre.widget.ImageCycleView.ImageCycleViewListener;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -54,16 +55,22 @@ public class PublishActivity extends Activity {
 		btnHome.setOnClickListener(new OnClickListener(){
 	         @Override
 	         public void onClick(View v) {
+	        	 Intent intent = new Intent(PublishActivity.this, HomeActivity.class);
+	        	 startActivity(intent);
 	         }
 	         });
 		btnHire.setOnClickListener(new OnClickListener(){
 	         @Override
 	         public void onClick(View v) {
+	        	 Intent intent = new Intent(PublishActivity.this, EditSellActivity.class);
+	        	 startActivity(intent);
 	         }
 	         });
 		btnSell.setOnClickListener(new OnClickListener(){
 	         @Override
 	         public void onClick(View v) {
+	        	 Intent intent = new Intent(PublishActivity.this, EditSellActivity.class);
+	        	 startActivity(intent);
 	         }
 	         });
 		btnLessee.setOnClickListener(new OnClickListener(){

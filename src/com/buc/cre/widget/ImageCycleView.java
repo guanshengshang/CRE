@@ -16,9 +16,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.buc.cre.R;
-import com.buc.cre.R.drawable;
-import com.buc.cre.R.id;
-import com.buc.cre.R.layout;
 import com.buc.cre.entity.ADInfo;
 
 /**

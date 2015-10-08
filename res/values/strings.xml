@@ -17,5 +17,42 @@
     <string name="btn_store_sell">我要出售商铺</string>
     <string name="btn_store_lessee">我要承租商铺</string>
     <string name="btn_store_buy">我要购买商铺</string>
+    
+    <!-- edit sell -->
+    <string name="btn_back">返回</string>
+    <string name="text_edit_sell_1">【项目概念图】</string>
+    <string name="text_edit_sell_2">选择上传，上传格式为JPG、PNG、JPEG、BMP</string>
+    <string name="text_edit_sell_3">【招商手册/宣传手册】</string>
+    <string name="text_edit_sell_4">选择上传，上传格式为PPT、MP4、WMV</string>
+    <string name="text_edit_sell_5">项目名称</string>
+    <string name="text_edit_sell_6">定         位</string>
+    <string name="text_edit_sell_7">地         址</string>
+    <string name="text_edit_sell_8">联  系  人</string>
+    <string name="text_edit_sell_9">联系方式</string>
+    <string name="text_edit_sell_10">【铺位信息】</string>
+    <string name="text_edit_sell_11">铺  位  号</string>
+    <string name="text_edit_sell_12">使用面积</string>
+    <string name="text_edit_sell_13">租金/售价</string>
+    <string name="text_edit_sell_14">工程条件</string>
+    <string name="text_edit_sell_15">m²</string>
+    <string name="text_edit_sell_16">元/m²</string>
+    <string name="btn_select">选择</string>
+    <string name="btn_upload">上传</string>
+    <string name="btn_add">添加</string>
+    <string name="btn_delete">删除</string>
+    <string name="btn_apply">提交</string>
 
+    <!-- edit buy -->
+    <string name="text_edit_buy_1">承租</string>
+    <string name="text_edit_buy_2">购买</string>
+    <string name="text_edit_buy_3">个人</string>
+    <string name="text_edit_buy_4">加盟商</string>
+    <string name="text_edit_buy_5">公司直营</string>
+    <string name="text_edit_buy_6">品牌名称</string>
+    <string name="text_edit_buy_7">使用面积</string>
+    <string name="text_edit_buy_8">意向价格</string>
+    <string name="text_edit_buy_9">工程需求</string>
+    <string name="btn_select_purpose">意向类型</string>
+    <string name="btn_select_manage">经营类型</string>
+    
 </resources>

@@ -29,8 +29,16 @@
         <activity
             android:name="com.buc.cre.activity.PublishActivity"
             android:label="@string/app_name" >
-            <intent-filter>
-            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.buc.cre.activity.EditSellActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.buc.cre.activity.EditBuyActivity"
+            android:label="@string/app_name" >
         </activity>
     </application>
 
