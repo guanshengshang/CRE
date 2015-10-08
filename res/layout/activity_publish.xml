@@ -25,7 +25,7 @@
                 android:orientation="vertical" >
 
                 <Button
-                    android:id="@+id/homeButton"
+                    android:id="@+id/btn_publish_home"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
@@ -40,7 +40,7 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/txt_publish_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
@@ -57,39 +57,40 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/shopCenterButton"
+            android:id="@+id/btn_publish_hire"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|center_vertical"
             android:text="@string/btn_store_hire" />
         
         <Button
-            android:id="@+id/shopCenterButton"
+            android:id="@+id/btn_publish_sell"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|center_vertical"
             android:text="@string/btn_store_sell" />
         
         <Button
-            android:id="@+id/shopCenterButton"
+            android:id="@+id/btn_publish_lessee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|center_vertical"
             android:text="@string/btn_store_lessee" />
         
         <Button
-            android:id="@+id/shopCenterButton"
+            android:id="@+id/btn_publish_buy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|center_vertical"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="50dp"
             android:text="@string/btn_store_buy" />
-        
-        <com.buc.cre.widget.ImageCycleView
-            android:id="@+id/ad_viewButtom"
+
+        <ImageView
+            android:id="@+id/view_publish_ad"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-        </com.buc.cre.widget.ImageCycleView>
+            android:layout_height="fill_parent"
+            android:src="@drawable/icon_error"
+            android:layout_marginBottom="20dp" />
         
     </LinearLayout>
 

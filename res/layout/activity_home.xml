@@ -25,7 +25,7 @@
                 android:orientation="vertical" >
 
                 <Button
-                    android:id="@+id/homeButton"
+                    android:id="@+id/btn_home_home"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
@@ -40,7 +40,7 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/txt_home_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center_vertical"
@@ -55,7 +55,7 @@
                 android:orientation="vertical" >
 
                 <Button
-                    android:id="@+id/publishButton"
+                    android:id="@+id/btn_home_publish"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"
@@ -65,7 +65,7 @@
         </LinearLayout>
 
         <com.buc.cre.widget.ImageCycleView
-            android:id="@+id/ad_viewTop"
+            android:id="@+id/view_home_adTop"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_marginBottom="2dp"
@@ -86,14 +86,14 @@
                 android:orientation="vertical" >
 
                 <Button
-                    android:id="@+id/shopCenterButton"
+                    android:id="@+id/btn_home_shoppingCenter"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="2"
                     android:text="@string/btn_shopcenter" />
 
                 <ImageView
-                    android:id="@+id/shopCenterImage"
+                    android:id="@+id/img_home_shoppingCenter"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
@@ -107,14 +107,14 @@
                 android:orientation="vertical" >
 
                 <Button
-                    android:id="@+id/streetButton"
+                    android:id="@+id/btn_home_street"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="2"
                     android:text="@string/btn_street" />
 
                 <ImageView
-                    android:id="@+id/streetImage"
+                    android:id="@+id/img_home_street"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
@@ -128,14 +128,14 @@
                 android:orientation="vertical" >
 
                 <Button
-                    android:id="@+id/hotelButton"
+                    android:id="@+id/btn_home_hotel"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="2"
                     android:text="@string/btn_hotel" />
 
                 <ImageView
-                    android:id="@+id/hotelImage"
+                    android:id="@+id/img_home_hotel"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
@@ -149,14 +149,14 @@
                 android:orientation="vertical" >
 
                 <Button
-                    android:id="@+id/communityButton"
+                    android:id="@+id/btn_home_community"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="2"
                     android:text="@string/btn_community" />
 
                 <ImageView
-                    android:id="@+id/communityImage"
+                    android:id="@+id/img_home_community"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
@@ -177,7 +177,7 @@
                 android:orientation="vertical" >
 
                 <EditText
-                    android:id="@+id/search"
+                    android:id="@+id/txt_home_search"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
@@ -196,7 +196,7 @@
                 android:orientation="vertical" >
 
                 <Button
-                    android:id="@+id/homeButton"
+                    android:id="@+id/btn_home_search"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"
@@ -206,7 +206,7 @@
         </LinearLayout>
 
         <com.buc.cre.widget.ImageCycleView
-            android:id="@+id/ad_viewButtom"
+            android:id="@+id/view_home_adBottom"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1" >

@@ -64,8 +64,8 @@ public class HomeActivity extends Activity {
 			infosButtom.add(info);
 		}
 		
-		mAdViewTop = (ImageCycleView) findViewById(R.id.ad_viewTop);
-		mAdViewButtom = (ImageCycleView) findViewById(R.id.ad_viewButtom);
+		mAdViewTop = (ImageCycleView) findViewById(R.id.view_home_adTop);
+		mAdViewButtom = (ImageCycleView) findViewById(R.id.view_home_adBottom);
 		mAdViewTop.setImageResources(infosTop, mAdCycleViewListener);
 		mAdViewButtom.setImageResources(infosButtom, mAdCycleViewListener);
 		
@@ -73,12 +73,12 @@ public class HomeActivity extends Activity {
 	}
 	
 	private void initButtonListener() {
-		btnHome = (Button)findViewById(R.id.homeButton);
-		btnPublish = (Button)findViewById(R.id.publishButton);
-		btnShopCenter = (Button)findViewById(R.id.shopCenterButton);
-		btnStreet = (Button)findViewById(R.id.streetButton);
-		btnHotel = (Button)findViewById(R.id.hotelButton);
-		btnCommunity = (Button)findViewById(R.id.communityButton);
+		btnHome = (Button)findViewById(R.id.btn_home_home);
+		btnPublish = (Button)findViewById(R.id.btn_home_publish);
+		btnShopCenter = (Button)findViewById(R.id.btn_home_shoppingCenter);
+		btnStreet = (Button)findViewById(R.id.btn_home_street);
+		btnHotel = (Button)findViewById(R.id.btn_home_hotel);
+		btnCommunity = (Button)findViewById(R.id.btn_home_community);
 		
 		btnHome.setOnClickListener(new OnClickListener(){
 	         @Override
