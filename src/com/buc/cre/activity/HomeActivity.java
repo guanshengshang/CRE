@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 
 import com.buc.cre.R;
 import com.buc.cre.entity.ADInfo;
+import com.buc.cre.entity.ObjectId;
 import com.buc.cre.widget.ImageCycleView;
 import com.buc.cre.widget.ImageCycleView.ImageCycleViewListener;
 import com.nostra13.universalimageloader.core.ImageLoader;
