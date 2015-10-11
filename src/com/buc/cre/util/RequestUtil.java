@@ -81,7 +81,7 @@ public class RequestUtil {
 			conn.setRequestProperty("Connection", "Keep-Alive");
 			conn.setRequestProperty("User-Agent",
 					"Mozilla/5.0 (Windows; U; Windows NT 6.1; zh-CN; rv:1.9.2.6)");
-			conn.setRequestProperty("Content-Type", "application/octet-stream");
+			conn.setRequestProperty("Content-type", "multipart/form-data");
 			conn.connect();
 			
 			os = conn.getOutputStream();
