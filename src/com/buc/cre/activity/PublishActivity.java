@@ -76,11 +76,15 @@ public class PublishActivity extends Activity {
 		btnLessee.setOnClickListener(new OnClickListener(){
 	         @Override
 	         public void onClick(View v) {
+	        	 Intent intent = new Intent(PublishActivity.this, EditBuyActivity.class);
+	        	 startActivity(intent);
 	         }
 	         });
 		btnBuy.setOnClickListener(new OnClickListener(){
 	         @Override
 	         public void onClick(View v) {
+	        	 Intent intent = new Intent(PublishActivity.this, EditBuyActivity.class);
+	        	 startActivity(intent);
 	         }
 	         });
 	}

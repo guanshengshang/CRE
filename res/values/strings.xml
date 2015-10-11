@@ -30,12 +30,13 @@
     <string name="text_edit_sell_8">联系人</string>
     <string name="text_edit_sell_9">联系方式</string>
     <string name="text_edit_sell_10">【铺位信息】</string>
-    <string name="text_edit_sell_11">铺  位  号</string>
+    <string name="text_edit_sell_11">铺位 号</string>
     <string name="text_edit_sell_12">使用面积</string>
     <string name="text_edit_sell_13">租金/售价</string>
     <string name="text_edit_sell_14">工程条件</string>
     <string name="text_edit_sell_15">m²</string>
     <string name="text_edit_sell_16">元/m²</string>
+    <string name="text_edit_sell_17">其他</string>
     <string name="btn_select">选择</string>
     <string name="btn_upload">上传</string>
     <string name="btn_type">类别</string>

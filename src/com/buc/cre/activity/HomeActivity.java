@@ -91,14 +91,14 @@ public class HomeActivity extends Activity {
 
 		initButtonListener();
 
-		new Thread() {
+		/*new Thread() {
 			@Override
 			public void run() {
 				String aa = RequestUtil
 						.sendRequest("http://116.213.213.188:8080/NfsmwServer/base.do?action=A4064&iUserId=&sUserName=").responseString;
 				Log.v("==test", "response " + aa);
 			}
-		}.start();
+		}.start();*/
 	}
 
 	private void initButtonListener() {
