@@ -57,4 +57,19 @@
     <string name="btn_select_purpose">意向类型</string>
     <string name="btn_select_manage">经营类型</string>
     
+    <!-- store list -->
+    <string name="text_store_list_5">项目名称：</string>
+    <string name="text_store_list_6">地址：</string>
+    <string name="text_store_list_7">价格：</string>
+    <string name="text_store_list_8">使用面积：</string>
+    <string name="text_store_list_9">招商对象：</string>
+    <string name="text_store_list_10">【需求】</string>
+    
+    <!-- spinner list -->
+    <string-array name="store_type">
+        <item>购物中心</item>
+        <item>步行街</item>
+        <item>星级酒店</item>
+        <item>社区商业</item>
+    </string-array>
 </resources>

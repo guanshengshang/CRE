@@ -127,24 +127,36 @@ public class HomeActivity extends Activity {
 		btnShopCenter.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				Intent intent = new Intent(HomeActivity.this,
+						StoreListActivity.class);
+				startActivity(intent);
 			}
 		});
 
 		btnStreet.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				Intent intent = new Intent(HomeActivity.this,
+						StoreListActivity.class);
+				startActivity(intent);
 			}
 		});
 
 		btnHotel.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				Intent intent = new Intent(HomeActivity.this,
+						StoreListActivity.class);
+				startActivity(intent);
 			}
 		});
 
 		btnCommunity.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				Intent intent = new Intent(HomeActivity.this,
+						StoreListActivity.class);
+				startActivity(intent);
 			}
 		});
 	}

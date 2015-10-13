@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#009999"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_store_list_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="111"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15sp" />
+        
+        <TextView
+            android:id="@+id/text_store_list_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="22"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15sp" />
+        
+        <TextView
+            android:id="@+id/text_store_list_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="333"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15sp" />
+        
+        <TextView
+            android:id="@+id/text_store_list_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="444"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15sp" />
+        
+        <TextView
+            android:id="@+id/text_store_list_5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="555"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15sp" />
+        
+        <TextView
+            android:id="@+id/text_store_list_6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="666"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15sp" />
+        
+        <TextView
+            android:id="@+id/text_store_list_7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="777"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>
