@@ -1,9 +1,11 @@
 package com.buc.cre.server;
 
-import java.io.File;
 import java.util.ArrayList;
 
+import android.util.Log;
+
 import com.buc.cre.entity.RentProject;
+import com.buc.cre.util.RequestUtil;
 
 public class RentRequestManager {
 	private static final String IP = "";
@@ -36,7 +38,15 @@ public class RentRequestManager {
 
 	// 发布招租信息
 	public static void OnPublishRentInfo(RentProject rentProject) {
-
+		final String url = "";
+		new Thread() {
+			@Override
+			public void run() {
+				String aa = RequestUtil
+						.sendRequest(url).responseString;
+				Log.v("==test", "response " + aa);
+			}
+		}.start();
 	}
 
 	// 更新招租信息

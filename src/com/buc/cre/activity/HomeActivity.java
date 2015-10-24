@@ -7,16 +7,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.buc.cre.R;
 import com.buc.cre.entity.ADInfo;
-import com.buc.cre.util.RequestUtil;
 import com.buc.cre.widget.ImageCycleView;
 import com.buc.cre.widget.ImageCycleView.ImageCycleViewListener;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -48,7 +47,9 @@ public class HomeActivity extends Activity {
 	private Button btnStreet;
 	private Button btnHotel;
 	private Button btnCommunity;
-
+	private Button btnSearch;
+	private EditText editSearch;
+	
 	// 定义Handler对象
 	private Handler handler = new Handler() {
 		@Override
@@ -89,26 +90,19 @@ public class HomeActivity extends Activity {
 		mAdViewTop.setImageResources(infosTop, mAdCycleViewListener);
 		mAdViewButtom.setImageResources(infosButtom, mAdCycleViewListener);
 
-		initButtonListener();
-
-		/*new Thread() {
-			@Override
-			public void run() {
-				String aa = RequestUtil
-						.sendRequest("http://116.213.213.188:8080/NfsmwServer/base.do?action=A4064&iUserId=&sUserName=").responseString;
-				Log.v("==test", "response " + aa);
-			}
-		}.start();*/
+		init();
 	}
 
-	private void initButtonListener() {
+	private void init() {
 		btnHome = (Button) findViewById(R.id.btn_home_home);
 		btnPublish = (Button) findViewById(R.id.btn_home_publish);
 		btnShopCenter = (Button) findViewById(R.id.btn_home_shoppingCenter);
 		btnStreet = (Button) findViewById(R.id.btn_home_street);
 		btnHotel = (Button) findViewById(R.id.btn_home_hotel);
 		btnCommunity = (Button) findViewById(R.id.btn_home_community);
-
+		btnSearch = (Button) findViewById(R.id.btn_home_search);
+		editSearch = (EditText) findViewById(R.id.txt_home_search);
+		
 		btnHome.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -156,6 +150,18 @@ public class HomeActivity extends Activity {
 			public void onClick(View v) {
 				Intent intent = new Intent(HomeActivity.this,
 						StoreListActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		btnSearch.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Bundle bundle = new Bundle();
+				bundle.putString("search", editSearch.getText().toString());
+				Intent intent = new Intent(HomeActivity.this,
+						StoreListActivity.class);
+				intent.putExtras(bundle);
 				startActivity(intent);
 			}
 		});

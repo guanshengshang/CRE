@@ -26,12 +26,12 @@
                 android:orientation="vertical" >
 
                 <Button
-                    android:id="@+id/btn_edit_buy_home"
+                    android:id="@+id/btn_edit_buy_back"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
                     android:layout_marginLeft="3.0dip"
-                    android:text="@string/btn_home" />
+                    android:text="@string/btn_back" />
             </LinearLayout>
 
             <LinearLayout

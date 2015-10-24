@@ -26,12 +26,12 @@
                 android:orientation="vertical" >
 
                 <Button
-                    android:id="@+id/btn_edit_sell_home"
+                    android:id="@+id/btn_store_list_back"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
                     android:layout_marginLeft="3.0dip"
-                    android:text="@string/btn_home" />
+                    android:text="@string/btn_back" />
             </LinearLayout>
 
             <LinearLayout
@@ -71,7 +71,7 @@
                 android:orientation="vertical" >
 
                 <Spinner
-                    android:id="@+id/spinner1"
+                    android:id="@+id/spinner_store_list_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -83,7 +83,7 @@
                 android:orientation="vertical" >
 
                 <Spinner
-                    android:id="@+id/spinner1"
+                    android:id="@+id/spinner_store_list_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -95,7 +95,7 @@
                 android:orientation="vertical" >
 
                 <Spinner
-                    android:id="@+id/spinner1"
+                    android:id="@+id/spinner_store_list_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -107,7 +107,7 @@
                 android:orientation="vertical" >
 
                 <Spinner
-                    android:id="@+id/spinner1"
+                    android:id="@+id/spinner_store_list_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
